@@ -1,0 +1,134 @@
+Script started on Wed 31 Jan 2024 08:27:33 PM CST
+[?1034hbash-4.2$ pwd
+/home/u3/ark0053
+bash-4.2$ ls
+a.out				Irvine
+appdata				ntuser.cmd
+commands.script			output.txt
+COMP-3500			project1_kiser_ark0053.cpp
+demo_tutorial			Project1.out
+Desktop				project2_kiser_ark0053.cpp
+Documents			Project2.out
+FinalExam_Kiser_ark0053		project3_kiser_ark0053.cpp
+FinalExam_Kiser_ark0053.tar.gz	Project3.out
+Helloworld.cpp			project4_kiser_ark0053.cpp
+HW5_Number_2_code.asm		Project4.out
+HW5_Number_3_CloudArray.asm	project5_kiser_ark0053
+HW5_Number_4.asm		project5_LastName_UserID.tar.gz
+HW6_Number_1.asm		TowerOfHanoi.out
+input1.txt			TowerOfHanoi_plain.cpp
+input2.txt			u3
+bash-4.2$ mkdir sampledirectory
+bash-4.2$ cp Hellowwor[K[K[Korld.cpp sampledirectory
+bash-4.2$ mv Hellow[Kworld.cpp[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kcp Helloworld.cpp .
+cp: ‘Helloworld.cpp’ and ‘./Helloworld.cpp’ are the same file
+bash-4.2$ cp Helloworld.cpp Helloworldcopy.cpp
+bash-4.2$ cd am[K[Ksampledirectory
+bash-4.2$ ls
+Helloworld.cpp
+bash-4.2$ cd ..
+bash-4.2$ ls
+a.out				Irvine
+appdata				ntuser.cmd
+commands.script			output.txt
+COMP-3500			project1_kiser_ark0053.cpp
+demo_tutorial			Project1.out
+Desktop				project2_kiser_ark0053.cpp
+Documents			Project2.out
+FinalExam_Kiser_ark0053		project3_kiser_ark0053.cpp
+FinalExam_Kiser_ark0053.tar.gz	Project3.out
+Helloworldcopy.cpp		project4_kiser_ark0053.cpp
+Helloworld.cpp			Project4.out
+HW5_Number_2_code.asm		project5_kiser_ark0053
+HW5_Number_3_CloudArray.asm	project5_LastName_UserID.tar.gz
+HW5_Number_4.asm		sampledirectory
+HW6_Number_1.asm		TowerOfHanoi.out
+input1.txt			TowerOfHanoi_plain.cpp
+input2.txt			u3
+bash-4.2$ rm [K[K[Kmv Helloworld.[Kcopy.cpp sampledirectory
+bash-4.2$ cd sampledirectory
+bash-4.2$ ls
+Helloworldcopy.cpp  Helloworld.cpp
+bash-4.2$ cd ..
+bash-4.2$ rm [K[K[Kcd sampledirectory
+bash-4.2$ rm Helloworldcopy.cpp
+bash-4.2$ ls
+Helloworld.cpp
+bash-4.2$ cd [K[K[Kchmod [options] mode filename[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kcd H[K[K[K[Kchmod +rwx mde[K[Kode Helloworld.cpp
+chmod: cannot access ‘mode’: No such file or directory
+bash-4.2$ chmod +rwx Helloworld.p[Kcpp
+bash-4.2$ clear
+[3;J[H[2Jbash-4.2$ who
+yzf0019  pts/1        2023-11-28 18:11 (:1)
+ark0053  pts/3        2024-01-31 20:20 (ettin.eng.auburn.edu)
+ark0053  pts/4        2024-01-31 20:27
+bash-4.2$ who -q
+yzf0019 ark0053 ark0053
+# users=3
+bash-4.2$ nproc
+16
+bash-4.2$ g++ --h
+Usage: g++ [options] file...
+Options:
+  -pass-exit-codes         Exit with highest error code from a phase
+  --help                   Display this information
+  --target-help            Display target specific command line options
+  --help={common|optimizers|params|target|warnings|[^]{joined|separate|undocumented}}[,...]
+                           Display specific types of command line options
+  (Use '-v --help' to display command line options of sub-processes)
+  --version                Display compiler version information
+  -dumpspecs               Display all of the built in spec strings
+  -dumpversion             Display the version of the compiler
+  -dumpmachine             Display the compiler's target processor
+  -print-search-dirs       Display the directories in the compiler's search path
+  -print-libgcc-file-name  Display the name of the compiler's companion library
+  -print-file-name=<lib>   Display the full path to library <lib>
+  -print-prog-name=<prog>  Display the full path to compiler component <prog>
+  -print-multiarch         Display the target's normalized GNU triplet, used as
+                           a component in the library path
+  -print-multi-directory   Display the root directory for versions of libgcc
+  -print-multi-lib         Display the mapping between command line options and
+                           multiple library search directories
+  -print-multi-os-directory Display the relative path to OS libraries
+  -print-sysroot           Display the target libraries directory
+  -print-sysroot-headers-suffix Display the sysroot suffix used to find headers
+  -Wa,<options>            Pass comma-separated <options> on to the assembler
+  -Wp,<options>            Pass comma-separated <options> on to the preprocessor
+  -Wl,<options>            Pass comma-separated <options> on to the linker
+  -Xassembler <arg>        Pass <arg> on to the assembler
+  -Xpreprocessor <arg>     Pass <arg> on to the preprocessor
+  -Xlinker <arg>           Pass <arg> on to the linker
+  -save-temps              Do not delete intermediate files
+  -save-temps=<arg>        Do not delete intermediate files
+  -no-canonical-prefixes   Do not canonicalize paths when building relative
+                           prefixes to other gcc components
+  -pipe                    Use pipes rather than intermediate files
+  -time                    Time the execution of each subprocess
+  -specs=<file>            Override built-in specs with the contents of <file>
+  -std=<standard>          Assume that the input sources are for <standard>
+  --sysroot=<directory>    Use <directory> as the root directory for headers
+                           and libraries
+  -B <directory>           Add <directory> to the compiler's search paths
+  -v                       Display the programs invoked by the compiler
+  -###                     Like -v but options quoted and commands not executed
+  -E                       Preprocess only; do not compile, assemble or link
+  -S                       Compile only; do not assemble or link
+  -c                       Compile and assemble, but do not link
+  -o <file>                Place the output into <file>
+  -pie                     Create a position independent executable
+  -shared                  Create a shared library
+  -x <language>            Specify the language of the following input files
+                           Permissible languages include: c c++ assembler none
+                           'none' means revert to the default behavior of
+                           guessing the language based on the file's extension
+
+Options starting with -g, -f, -m, -O, -W, or --param are automatically
+ passed on to the various sub-processes invoked by g++.  In order to pass
+ other options on to these processes the -W<letter> options must be used.
+
+For bug reporting instructions, please see:
+<http://bugzilla.redhat.com/bugzilla>.
+bash-4.2$ exit
+exit
+
+Script done on Wed 31 Jan 2024 08:37:58 PM CST
